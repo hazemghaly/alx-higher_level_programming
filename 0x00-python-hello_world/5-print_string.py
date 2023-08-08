@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 str = "Holberton School"
-print(f"Holberton SchoolHolberton SchoolHolberton School")
-print(str[0:9])
+print(str *3, str[0:9], sep="\n")
