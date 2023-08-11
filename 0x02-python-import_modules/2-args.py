@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ == '__2-args__':
+if __name__ == '__main__':
     import sys
     n = len(sys.argv) - 1
     if n == 0:
