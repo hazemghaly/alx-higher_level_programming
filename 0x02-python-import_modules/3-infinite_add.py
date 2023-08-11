@@ -5,7 +5,7 @@ if __name__ == '__main__':
     x = 0
     for s in range(1, n + 1):
         if sys.argv[s].isnumeric():
-           if int(sys.argv[s]) < 0:
+            if int(sys.argv[s]) < 0:
                 x = int(sys.argv[s])
         x += int(sys.argv[s])
     print("{}".format(x))
