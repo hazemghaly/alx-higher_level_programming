@@ -10,9 +10,9 @@ if __name__ == '__main__':
     if operator not in operators:
         print("Unknown operator. Available operators: +, -, * and / ")
         exit(1)
-    if sys.argv[1].isnumeric() and sys.argv[3].isnumeric():
-        a = int(sys.argv[1])
-        b = int(sys.argv[3])
+    #if sys.argv[1].isnumeric() and sys.argv[3].isnumeric():
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
     from calculator_1.py import add, sub, mul, div
     if operator == '+':
         print('{} {} {} = {}'.format(a, operator, b, add(a, b)))
