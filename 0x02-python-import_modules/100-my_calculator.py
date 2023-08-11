@@ -7,7 +7,6 @@ if __name__ == '__main__':
         print("Usage: {} <a> <operator> <b>".format(sys.argv[0]))
         exit(1)
     operator = sys.argv[2]
-    print(operator)
     if operator not in operators:
         print("Unknown operator. Available operators: +, -, * and / ")
         exit(1)
