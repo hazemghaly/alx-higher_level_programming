@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
-    print('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+import sys
+sys.stdout.write('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
