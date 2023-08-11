@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-a = 0
-print('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+if __name__ == '__main__':
+    print('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
