@@ -13,8 +13,8 @@ PyListObject *ha;
 ha = (PyListObject *)p;
 printf("[*] Size of the Python List = %d\n", s);
 printf("[*] Allocated = %ld\n", ha->allocated);
-	for (i = 0; i < size; i++)
-	{
-		printf("Element %d: %s\n", i, ha->ob_item[i]->ob_type->tp_name);
-	}
+for (i = 0; i < s; i++)
+{
+printf("Element %d: %s\n", i, ha->ob_item[i]->ob_type->tp_name);
+}
 }
