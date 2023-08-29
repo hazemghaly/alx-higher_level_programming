@@ -1,8 +1,9 @@
-afe_print_list_integers(my_list=[], x=0):
+#!/usr/bin/python3
+def safe_print_list_integers(my_list=[], x=0):
     y = 0
     i = 0
     try:
-        while y < x: 
+        while y < x:
             if type(my_list[y]) is int:
                 print("{:d}".format(my_list[y]), end='')
                 i += 1
