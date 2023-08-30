@@ -27,7 +27,7 @@ class Square:
     def position(self):
         """define getter of atturbute """
 
-    @size.setter
+    @position.setter
     def position(self, value):
         """define setter of atturbute """
         if len(value) != 2:
