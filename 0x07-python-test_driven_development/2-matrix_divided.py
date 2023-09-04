@@ -33,7 +33,7 @@ def matrix_divided(matrix, div):
                     if m is not False:
                         raise TypeError("matrix must be a \
 matrix (list of lists)\
-of integers/floats")
+ of integers/floats")
             d.append(round(cpy_max[i][j] / div, 2))
     di = [[d[(c) * x + y] for y in range(c)] for x in range(h)]
     return (di)
