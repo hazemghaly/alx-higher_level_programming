@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
     define mul
     raise type error
