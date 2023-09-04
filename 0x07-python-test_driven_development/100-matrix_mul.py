@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""
-    define matrix mul
-"""
 
+"""
+    define mul
+    raise type error
+    Returns a new matrix
+"""
 
 def matrix_mul(m_a, m_b):
     """
-        define mul
-        raise type error
-        Returns a new matrix
+    define matrix mul
     """
     if len(m_a) == 0:
         raise ValueError("m_a can't be empty")
