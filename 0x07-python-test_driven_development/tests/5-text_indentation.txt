@@ -12,7 +12,7 @@ name
 
 ::
 
-    >>> text_indentation = __import__('a').text_indentation
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
     >>> text_indentation("""elit. Quonam modo? Utrum: igitur tibi,hh""")
     elit.
     <BLANKLINE>

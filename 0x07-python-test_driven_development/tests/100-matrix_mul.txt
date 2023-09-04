@@ -11,7 +11,7 @@ Numbers
 returns the matrix of its mul.  For numbers,
 
 ::
-    >>> matrix_mul = __import__('a').matrix_mul
+    >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
     >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
     [[7, 10], [15, 22]]
 

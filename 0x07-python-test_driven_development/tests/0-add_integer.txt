@@ -11,7 +11,7 @@ Numbers
 that value is equivalent to using the ``+`` operator.
 
 ::
-    >>> add_integer = __import__('a').add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
     >>> add_integer(1, 2)
     3
 
