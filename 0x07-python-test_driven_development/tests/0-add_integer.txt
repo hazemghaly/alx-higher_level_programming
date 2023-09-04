@@ -1,0 +1,65 @@
+===============================
+ How to Use 0-add_integer.py
+===============================
+
+function called ``add_integer(a, b=98)``.
+
+Numbers
+=======
+
+``add_integer(a, b=98)`` returns the addation of its arguments.  For numbers,
+that value is equivalent to using the ``+`` operator.
+
+::
+    >>> add_integer = __import__('a').add_integer
+    >>> add_integer(1, 2)
+    3
+
+other check
+
+::
+
+    >>> add_integer(100, -2)
+    98
+
+::
+
+    >>> add_integer(2)
+    100
+
+other check
+
+::
+
+    >>> add_integer(100.3, -2)
+    98
+
+other check
+
+::
+
+    >>> add_integer(2.0, 3.0)
+    5
+
+Non-Numbers
+===========
+
+::
+
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+    
+other check
+
+::
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+::
+
+    >>> add_integer("hello", 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer

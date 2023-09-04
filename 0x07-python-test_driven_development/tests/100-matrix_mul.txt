@@ -1,0 +1,78 @@
+===============================
+ How to Use 100-matrix_mul.txt
+===============================
+
+function called ``matrix_mul(m_a, m_b)``.
+
+Numbers
+=======
+
+``matrix_mul(m_a, m_b)`` a function that mul all elements of 2 matrix.
+returns the matrix of its mul.  For numbers,
+
+::
+    >>> matrix_mul = __import__('a').matrix_mul
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    [[7, 10], [15, 22]]
+
+::
+    >>> matrix_mul = __import__('a').matrix_mul
+    >>> matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+    [[13, 16]]
+
+Non-Numbers
+===========
+
+::
+
+    >>> matrix_mul([[1, 2], [3, 4, 5]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    TypeError: each row of m_a must should be of the same size
+
+::
+
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2, 5], [3, 4]])
+    Traceback (most recent call last):
+    TypeError: each row of m_b must should be of the same size
+
+::
+
+    >>> matrix_mul([], [[]])
+    Traceback (most recent call last):
+    ValueError: m_a can't be empty
+
+::
+
+    >>> print(matrix_mul([[1, 2]], []))
+    Traceback (most recent call last):
+    ValueError: m_b can't be empty
+
+::
+
+    >>> matrix_mul([[1, 2], ["3", 4]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    TypeError: m_a should contain only integers or floats
+
+::
+
+    >>> matrix_mul([[1, 2], [3, 4]], [["1", 2], [3, 4]])
+    Traceback (most recent call last):
+    TypeError: m_b should contain only integers or floats
+
+::
+
+    >>> matrix_mul([[3, 4], [5, 6]], [[1, 5]])
+    Traceback (most recent call last):
+    ValueError: m_a and m_b can't be multiplied
+
+::
+
+    >>> matrix_mul("None", [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    TypeError: m_a must be a list
+
+::
+
+    >>> matrix_mul([[1, 2], [3, 4]], "None")
+    Traceback (most recent call last):
+    TypeError: m_b must be a list

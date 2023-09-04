@@ -1,0 +1,32 @@
+===============================
+ How to Use 5-text_indentation.py
+===============================
+
+function called ``text_indentation(text):``.
+
+name
+=======
+
+``text_indentation(text):`` function that prints a text with \
+2 new lines after each of these characters: ., ? and :
+
+::
+
+    >>> text_indentation = __import__('a').text_indentation
+    >>> text_indentation("""elit. Quonam modo? Utrum: igitur tibi,hh""")
+    elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+    Utrum:
+    <BLANKLINE>
+    igitur tibi,hh
+
+Numbers
+===========
+
+::
+
+    >>> text_indentation(25)
+    Traceback (most recent call last):
+    TypeError: text must be a string
