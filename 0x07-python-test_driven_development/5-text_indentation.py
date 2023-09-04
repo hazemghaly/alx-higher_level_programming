@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""
+ """
     define text
+    raise type error
+    print newline
 """
 
 
 def text_indentation(text):
     """
-        define text
-        raise type error
-        print newline
+    define text
     """
     i = 0
     if not isinstance(text, str):
