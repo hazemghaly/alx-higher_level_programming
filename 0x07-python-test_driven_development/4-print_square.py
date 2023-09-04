@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
     define size
+    raise type error
+    print #
 """
 
 
 def print_square(size):
     """
-        define size
-        raise type error
-        print #
+    define size
     """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
