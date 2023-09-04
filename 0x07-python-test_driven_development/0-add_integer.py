@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """
-    define add function
+    define add int
+    raise type error
+    return int
 """
-
 
 def add_integer(a, b=98):
     """
-        define add int
-        raise type error
-        return int
+    define add function
     """
     if isinstance(b, float):
         b = int(b)
