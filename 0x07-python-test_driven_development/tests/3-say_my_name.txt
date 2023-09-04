@@ -11,7 +11,7 @@ name
 returns the division matrix of its arguments.  For numbers,
 
 ::
-    >>> say_my_name = __import__('a').say_my_name
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
     >>> say_my_name("John", "Smith")
     My name is John Smith
 
