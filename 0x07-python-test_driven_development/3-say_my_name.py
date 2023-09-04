@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-    define username
+    define name
+    raise type error
+    print name
 """
 
 
 def say_my_name(first_name, last_name=""):
     """
-        define name
-        raise type error
-        print name
+    define username
     """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
