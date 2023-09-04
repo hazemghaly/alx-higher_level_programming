@@ -16,7 +16,6 @@ returns the matrix of its mul.  For numbers,
     [[7, 10], [15, 22]]
 
 ::
-    >>> matrix_mul = __import__('a').matrix_mul
     >>> matrix_mul([[1, 2]], [[3, 4], [5, 6]])
     [[13, 16]]
 
