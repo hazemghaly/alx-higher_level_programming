@@ -5,6 +5,7 @@
     Returns a new matrix
 """
 
+
 def matrix_mul(m_a, m_b):
     """
     define matrix mul
