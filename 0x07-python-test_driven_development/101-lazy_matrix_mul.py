@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-    define matrix mul
+    define mul
+    raise type error
+    Returns a new matrix
 """
 
 
 def lazy_matrix_mul(m_a, m_b):
     """
-        define mul
-        raise type error
-        Returns a new matrix
+    define matrix mul
     """
     import numpy as np
 
