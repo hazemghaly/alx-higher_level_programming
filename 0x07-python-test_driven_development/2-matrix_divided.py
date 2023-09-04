@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-    define matrix div
+    define div
+    raise type error
+    Returns a new matrix
 """
 
 
 def matrix_divided(matrix, div):
     """
-        define div
-        raise type error
-        Returns a new matrix
+    define matrix div
     """
     h = len(matrix)
     c = len(matrix[0])
