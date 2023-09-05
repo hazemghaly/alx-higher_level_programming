@@ -13,20 +13,6 @@ class Rectangle:
         self.width = width
 
     @property
-    def height(self):
-        """define getter of atturbute """
-        return (self.__height)
-
-    @height.setter
-    def height(self, value):
-        """define setter of atturbute """
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
-        self.__height = value
-
-    @property
     def width(self):
         """define getter of atturbute """
         return (self.__width)
@@ -39,6 +25,20 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
+    @property
+    def height(self):
+        """define getter of atturbute """
+        return (self.__height)
+
+    @height.setter
+    def height(self, value):
+        """define setter of atturbute """
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
         """define public area atturbute """
@@ -67,8 +67,8 @@ class Rectangle:
         """difine classmethod """
         if not isinstance(size, int):
             raise TypeError("width must be an integer")
-	if size < 0:
-           raise ValueError(" width must be >= 0")
+        if size < 0:
+            raise ValueError(" width must be >= 0")
         return (cls(size, size))
 
     def __str__(self):
