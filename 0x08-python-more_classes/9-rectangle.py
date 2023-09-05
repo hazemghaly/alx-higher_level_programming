@@ -66,7 +66,7 @@ class Rectangle:
     def square(cls, size=0):
         """difine classmethod """
         if size < 0:
-            ValueError
+           raise ValueError(" width must be >= 0")
         return (cls(size, size))
 
     def __str__(self):
