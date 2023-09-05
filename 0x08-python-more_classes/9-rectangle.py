@@ -53,9 +53,9 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-         if size < 0:
-             ValueError
-	 return (cls(size, size))
+        if size < 0:
+            ValueError
+        return (cls(size, size))
 
     def __str__(self):
         s = []
