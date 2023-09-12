@@ -34,9 +34,8 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """define return str representation """
-        return ('[{}] {}/{}'
-                '.format'
-                '(self.__class__.__name__, self.__width, self.__height)')
+        return ("[{}] {}/{}".
+                format(self.__class__.__name__, self.__width, self.__height))
 
 
 class Square(Rectangle):
