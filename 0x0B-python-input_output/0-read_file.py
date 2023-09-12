@@ -5,6 +5,5 @@
 def read_file(filename=""):
     """define return add attributes """
     with open(filename, 'r', encoding="utf-8") as f:
-        for line in f:
-            print(line.strip())
+	 print(f.read(), end="")
     f.close()
