@@ -53,3 +53,9 @@ Non-Numbers
     >>> bg.area()
     Traceback (most recent call last):
     Exception: area() is not implemented
+
+::
+
+    >>> bg.integer_validator("hazemg", {3, 13})
+    Traceback (most recent call last):
+    TypeError: hazemg must be an integer
