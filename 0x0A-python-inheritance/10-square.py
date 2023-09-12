@@ -42,13 +42,6 @@ class Square(Rectangle, BaseGeometry):
 
     def __init__(self, size):
         """define atturbute """
-        super().integer_validator("size", size)
+        self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
-
-    def area(self):
-        """define public area atturbute """
-        return (self.__size * self.__size)
-
-    def __str__(self):
-        """define return str representation """
-        return ("[Rectangle] {}/{}".format(self.__size, self.__size))
