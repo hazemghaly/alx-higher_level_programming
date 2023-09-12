@@ -37,7 +37,7 @@ class Rectangle(BaseGeometry):
         return ("[Rectangle] {}/{}".format(self.__width, self.__height))
 
 
-class Square(Rectangle, BaseGeometry):
+class Square(Rectangle):
     """difine class named a rectangle """
 
     def __init__(self, size):
