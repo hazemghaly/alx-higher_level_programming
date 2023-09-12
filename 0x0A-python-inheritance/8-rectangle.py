@@ -18,6 +18,7 @@ class BaseGeometry:
         """define public area atturbute """
         raise Exception("area() is not implemented")
 
+
 class Rectangle(BaseGeometry):
     """difine class named a rectangle """
 
