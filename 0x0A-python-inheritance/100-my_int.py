@@ -8,7 +8,7 @@ class MyInt(int):
         """define return reversed oparetor representation """
         if(vlu == self.real):
             return (self.real != vlu)
-    
+
     def __ne__(self, y):
         """define return reversed oparetor representation """
         return (self.real == y)
