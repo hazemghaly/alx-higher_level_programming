@@ -59,3 +59,9 @@ Non-Numbers
     >>> bg.integer_validator("hazemg", {3, 13})
     Traceback (most recent call last):
     TypeError: hazemg must be an integer
+
+::
+
+    >>> bg.integer_validator("hazemg", "3")
+    Traceback (most recent call last):
+    TypeError: hazemg must be an integer
