@@ -4,7 +4,6 @@
 
 class BaseGeometry:
     """difine class named a BaseGeometry """
-
     def integer_validator(self, name, value):
         """define atturbute """
         self.name = name
@@ -21,7 +20,6 @@ class BaseGeometry:
 
 class Rectangle(BaseGeometry):
     """difine class named a rectangle """
-
     def __init__(self, width, height):
         """define atturbute """
         self.integer_validator("width", width)
