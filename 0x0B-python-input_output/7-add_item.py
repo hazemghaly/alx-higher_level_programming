@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+"""define function named add from_json_string """
 
 
 import sys
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     save_to_json_file = __import__('b').save_to_json_file
     load_from_json_file = __import__('b').load_from_json_file
     try:
