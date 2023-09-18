@@ -73,3 +73,13 @@ class Rectangle(Base):
     def area(self):
         """define public area atturbute """
         return (self.__width * self.__height)
+
+    def display(self):
+        """define public display atturbute """
+
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
