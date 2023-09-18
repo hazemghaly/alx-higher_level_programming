@@ -8,10 +8,10 @@ from models.base import Base
 class Rectangle(Base):
     """difine class named a rectangle """
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__height = height
-        self.__width = width
-        self.__x = x
-        self.__y = y
+        self.height = height
+        self.width = width
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -20,9 +20,9 @@ class Rectangle(Base):
         return (self.__width)
 
     @width.setter
-    def width(self):
+    def width(self, value):
         """define setter of atturbute """
-        self.__width = width
+        self.__width = value
 
     @property
     def height(self):
@@ -30,9 +30,9 @@ class Rectangle(Base):
         return (self.__height)
 
     @height.setter
-    def _height(self):
+    def height(self, value):
         """define setter of atturbute """
-        self.__height = height
+        self.__height = value
 
     @property
     def y(self):
@@ -40,9 +40,9 @@ class Rectangle(Base):
         return (self.__y)
 
     @y.setter
-    def y(self):
+    def y(self, value):
         """define setter of atturbute """
-        self.__y = y
+        self.__y = value
 
     @property
     def x(self):
@@ -50,6 +50,6 @@ class Rectangle(Base):
         return (self.__x)
 
     @x.setter
-    def x(self):
+    def x(self, value):
         """define setter of atturbute """
-        self.__x = x
+        self.__x = value
