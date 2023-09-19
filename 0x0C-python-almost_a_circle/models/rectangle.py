@@ -90,7 +90,7 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format
                 (self.id, self.x, self.y, self.width, self.height))
 
-        def update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """define public argument  atturbute """
         if args and len(args) != 0:
             i = 0
