@@ -1,2 +1,2 @@
 -- create tabels data base
-CREATE TABLE pet (name VARCHAR(256), id INT);
+CREATE TABLE  first_table(name VARCHAR(256), id INT);
