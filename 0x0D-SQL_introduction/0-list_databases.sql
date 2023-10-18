@@ -1,2 +1,2 @@
-# show list of DB 
+-- show list of DB 
 SHOW DATABASES;
