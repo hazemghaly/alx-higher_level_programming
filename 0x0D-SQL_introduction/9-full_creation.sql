@@ -1,5 +1,5 @@
 -- create tabels data base
-CREATE TABLE  second_table(name VARCHAR(256), id INT, score INT);
+CREATE TABLE IF NOT EXISTS  second_table(name VARCHAR(256), id INT, score INT);
 INSERT INTO  second_table (id, name, score)
 VALUES ('1', 'John', '10');
 INSERT INTO  second_table (id, name, score)
