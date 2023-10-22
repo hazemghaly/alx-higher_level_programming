@@ -1,5 +1,5 @@
 -- create tabels data base
-SELECT city, AVG(value) As max_temp
+SELECT city, AVG(value) As avg_temp
 FROM temperatures
 WHEN month = "7" and month = "8"
 GROUP BY `city`
