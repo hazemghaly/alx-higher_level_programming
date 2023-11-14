@@ -1,4 +1,5 @@
 -- create tabels data base
-SELECT city, max(temperature) As max_temp
+SELECT state, Max(temperature) AS max_temp
 FROM temperatures
-GROUP BY state;
+GROUP BY state
+ORDER BY state;
