@@ -8,7 +8,7 @@ let i = 2;
 if (!argv[i]) {
   exit();
 }
-while (argv[i]); {
+while (argv[i]) {
   console.log(process.argv[i]);
   i++;
 }
