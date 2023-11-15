@@ -11,6 +11,6 @@ function findSecondLargestElem (arr) {
   }
   console.log(second);
 }
-if (!process.argv[2] || process.argv[2] === 1 && !process.argv[3]) { console.log('0'); }
+if ((!process.argv[2] || process.argv[2] === 1) && (!process.argv[3])) { console.log('0'); }
 const arr = process.argv;
 findSecondLargestElem(arr);
