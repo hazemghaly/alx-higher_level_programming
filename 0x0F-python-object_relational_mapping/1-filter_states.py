@@ -11,10 +11,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
     N_and_n_que = "SELECT * FROM states WHERE name LIKE %s"
     cursor.execute(N_and_n_que, ('N%',))
-    states_N = cursor.fetchall()
-    cursor.execute(N_and_n_que, ('n%',))
-    states_n = cursor.fetchall()
-    states = states_N + states_n
+    states= cursor.fetchall()
     for state in states:
         print(state)
     cursor.close()
