@@ -3,16 +3,18 @@
 
 
 import sys
-import SQLAlchemy
+from sqlalchemy import create_engine
+from sqlalchemy.orm import Session
 from model_state import Base, State
 ''' Module For Connecting To MySQL database'''
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-    cursor = db.cursor()
-    cursor.execute('SELECT * FROM states')
-    states = cursor.fetchall()
+    engine = create_engine(
+        'mysql://{}:{}@localhost/{}'.format(
+            sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
+    Base.metadata.create_all(engine)
+    session = Session(engine)
+    states = session.query(State).all()
     for state in states:
-        print(state)
-    cursor.close()
-    db.close()
+        print("{}: {}".format(state.id, state.name))
+    session.close()
