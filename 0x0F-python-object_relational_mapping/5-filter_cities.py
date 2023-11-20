@@ -10,7 +10,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cursor = db.cursor()
     query = '''
-    SELECT cities.id, cities.name, COALESCE(states.name, "No state")
+    SELECT cities.name 
     FROM cities 
     JOIN states ON cities.state_id = states.id
     WHERE states.name Like %s
@@ -20,4 +20,4 @@ if __name__ == "__main__":
     for city in cities:
         print(city)
     cursor.close()
-    db.close()
+    db.close(
