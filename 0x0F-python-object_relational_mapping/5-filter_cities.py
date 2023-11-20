@@ -17,10 +17,10 @@ if __name__ == "__main__":
     '''
     cursor.execute(query, (sys.argv[4] + '%',))
     cities = cursor.fetchall()
-    if not cities:
+    ci = [city[0] for city in cities]
+    if not ci:
         print("")
     else:
-        for city in cities:
-            print(city[0])
+        print(", ".join(ci))
     cursor.close()
     db.close()
