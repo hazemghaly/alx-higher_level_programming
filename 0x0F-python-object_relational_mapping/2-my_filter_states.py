@@ -11,7 +11,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cursor = db.cursor()
     sql_que = "SELECT * FROM states WHERE name = %s".format(state_name)
-    cursor.execute(sql_que)
+    cursor.execute(sql_que, (state_name,))
     states = cursor.fetchall()
     for state in states:
         print(state)
