@@ -17,7 +17,7 @@ if __name__ == "__main__":
     '''
     cursor.execute(query, (sys.argv[4] + '%',))
     cities = cursor.fetchall()
-    ci = [city[0] for city in cities if city[1] == sys.argv[4]]
+    ci = [city[1] for city in cities if city[4] == sys.argv[4]]
     if not ci:
         print("")
     else:
