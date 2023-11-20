@@ -3,7 +3,7 @@
 
 
 import sys
-import MySQLdb
+import SQLAlchemy
 from model_state import Base, State
 ''' Module For Connecting To MySQL database'''
 
