@@ -5,8 +5,8 @@
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-from relationship_state import Base, State
-from relationship_city import City
+from relationship_state import State
+from relationship_city import  Base, City
 ''' Module For Connecting To MySQL database'''
 
 if __name__ == "__main__":
@@ -21,4 +21,5 @@ if __name__ == "__main__":
     san_francisco = City(name="San Francisco", state=california)
     session.add(san_francisco)
     session.commit()
+    states = session.query(State).all()
     session.close()
