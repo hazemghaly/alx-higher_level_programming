@@ -7,9 +7,7 @@ model states
 from sqlalchemy import Column, ForeignKey, Integer, String
 from model_state import Base
 from sqlalchemy.ext.declarative import declarative_base
-'''
-dd
-'''
+
 Base = declarative_base()
 
 
