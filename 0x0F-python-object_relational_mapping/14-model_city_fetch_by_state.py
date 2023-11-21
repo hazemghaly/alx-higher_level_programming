@@ -19,6 +19,6 @@ if __name__ == "__main__":
     session = Session(engine)
     st = session.query(State.name, City.id, City.name).join(
         City, State.id == City.state_id).all()
-    for State.name, City.id, City.name in st:
-        print("{}: ({}) {}".format(State.name, City.id, City.name))
+    for State_name, City_id, City_name in st:
+        print("{}: ({}) {}".format(State_name, City_id, City_name))
     session.close()
