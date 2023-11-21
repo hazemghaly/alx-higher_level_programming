@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-model states
+module class city
+
 '''
 
 
@@ -11,10 +12,8 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class State(Base):
-    '''
-    class
-    '''
+class City(Base):
+    '''class City '''
     __tablename__ = 'cities'
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
