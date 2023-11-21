@@ -6,7 +6,7 @@ import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from relationship_state import State
-from relationship_city import  Base, City
+from relationship_city import Base, City
 ''' Module For Connecting To MySQL database'''
 
 if __name__ == "__main__":
