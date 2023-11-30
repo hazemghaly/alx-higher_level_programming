@@ -1,3 +1,3 @@
 #!/bin/bash
 #script to get size
-curl -Is $URL | grep -w Content-Length | awk '{print $2}'
+curl -sI $URL | grep -i Content-Length | cut -d " " -f 2
