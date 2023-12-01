@@ -1,3 +1,3 @@
 #!/bin/bash
 #body display
-curl -s -w "%{http_code}\n" $1
+curl -s -r 0-200 -w "%{http_code}\n" $1 
