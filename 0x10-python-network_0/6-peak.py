@@ -4,8 +4,6 @@
 
 def find_peak(list_of_integers):
     '''function'''
-    # if len(list_of_integers) == 0:
-    #     return None
     start = 0
     end = len(list_of_integers) - 1
     while start < end:
