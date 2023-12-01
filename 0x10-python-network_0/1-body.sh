@@ -1,3 +1,3 @@
 #!/bin/bash
 #body display
-curl -sL $1 
+curl -Ls $1 
