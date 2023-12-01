@@ -1,3 +1,3 @@
 #!/bin/bash
 #show all options
-curl -LXi -s "OPTIONS" "$1"
+curl -Xi -s "OPTIONS" "$1"
