@@ -1,3 +1,3 @@
 #!/bin/bash
 #delete and show response
-curl -Xs "DELETE" -i "$1"
+curl -X "DELETE" -s "$1"
