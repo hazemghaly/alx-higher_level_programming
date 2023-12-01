@@ -1,3 +1,3 @@
 #!/bin/bash
 #body display
-curl -Lsi -o /dev/null "$1"
+curl -Lsi -o /dev/null -w "%{url_effective}" "$1"
