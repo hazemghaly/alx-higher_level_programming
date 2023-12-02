@@ -9,9 +9,7 @@ if __name__ == "__main__":
 
     url = ' https://developer.github.com/v3/repos/{}/{}/commits/'.format(
         sys.argv[2], sys.argv[1])
-    c = requests.get(url)
-    if c.status_code == 200:
-        commits = c.json()
+    commits = requests.get(url).json()
 
     try:
         for commit in commits[:10]:
