@@ -9,7 +9,7 @@ if __name__ == "__main__":
         sys.argv[2], sys.argv[1])
     commits = requests.get(url).json()
     try:
-        for i in range(10):
+        for i in commits[:10]:
             sha = commits[i]["sha"]
             author_name = commits[i]["commit"]["author"]["name"]
             print("{}: {}".format(sha, author_name))
