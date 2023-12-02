@@ -10,7 +10,7 @@ if __name__ == "__main__":
     url = ' https://developer.github.com/v3/repos/{}/{}/commits/'.format(
         sys.argv[2], sys.argv[1])
     c = requests.get(url)
-    if response.status_code == 200:
+    if c.status_code == 200:
         commits = c.json()
 
     try:
