@@ -13,7 +13,7 @@ if __name__ == "__main__":
     else:
         letter = sys.argv[1]
         payload = {'q': letter}
-    req = requests.post('http://0.0.0.0:5000/search_user', params=payload)
+    req = requests.post('http://0.0.0.0:5000/search_user', data=payload)
 
     try:
         res = req.json()
