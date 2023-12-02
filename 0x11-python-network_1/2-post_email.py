@@ -2,13 +2,15 @@
 '''a Python script for post mail'''
 
 
+
+import urllib.request
 import urllib.request
 import sys
 
 if __name__ == "__main__":
-    email = sys.argv[2]
+    data = urllib.parse.urlencode({"email": sys.argv[2]}).encode("ascii")
 
     req = urllib.request.Request(
-        sys.argv[1], email.encode('utf-8'), method="POST")
+        sys.argv[1], data, method="POST")
     with urllib.request.urlopen(req) as response:
-        print(response.read().decode('utf-8'))
+        print(f"Your email is: {response.read().decode('utf-8')}")
