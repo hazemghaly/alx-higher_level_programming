@@ -16,4 +16,5 @@ if __name__ == "__main__":
     login = requests.get(
         'https://api.github.com/search/repositories?q=github+api',
         auth=(username, token))
-    print(login(id))
+    res = login.json()
+    print("{}".format(res.get("id")))
