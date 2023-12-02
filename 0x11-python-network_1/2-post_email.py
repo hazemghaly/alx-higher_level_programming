@@ -2,7 +2,6 @@
 '''a Python script for post mail'''
 
 
-
 import urllib.request
 import urllib.request
 import sys
