@@ -9,9 +9,9 @@ if __name__ == "__main__":
         sys.argv[2], sys.argv[1])
     commits = requests.get(url).json()
     try:
-        for commit in commits[:10]:
-            sha = commit.get("sha")
-            author_name = commit.get("commit", {}).get("author", {}).get("name", "Unknown")
-            print("{}: {}".format(sha, author_name))
+        for i in range(10):
+            print("{}: {}".format(
+                commits[i].get("sha"),
+                commits[i].get("commit").get("author").get("name")))
     except IndexError:
         pass
