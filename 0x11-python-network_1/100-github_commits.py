@@ -11,7 +11,8 @@ if __name__ == "__main__":
         sys.argv[2], sys.argv[1])
     c = requests.get(url)
     if response.status_code == 200:
-    commits = c.json()
+        commits = c.json()
+
     try:
         for commit in commits[:10]:
             sha = commit["sha"]
