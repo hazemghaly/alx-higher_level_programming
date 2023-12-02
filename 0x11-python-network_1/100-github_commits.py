@@ -9,7 +9,9 @@ if __name__ == "__main__":
 
     url = ' https://developer.github.com/v3/repos/{}/{}/commits/'.format(
         sys.argv[2], sys.argv[1])
-    commits = requests.get(url).json()
+    c = requests.get(url)
+    if response.status_code == 200:
+    commits = c.json()
     try:
         for commit in commits[:10]:
             sha = commit["sha"]
