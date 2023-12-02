@@ -8,6 +8,7 @@ import sys
 if __name__ == "__main__":
 
     if not sys.argv[1]:
+        letter = ""
         payload = {'q': ""}
     else:
         payload = {'q': 'letter'}
